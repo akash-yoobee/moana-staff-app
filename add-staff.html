@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" crossorigin="anonymous" />
+  <link type="text/css" rel="stylesheet" href="./vendors/materialize.min.css" media="screen,projection" />
+  <link rel="stylesheet" href="dist/app.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moana Staff App</title>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="blue darken-2">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo center"><span class="logo__name">Moana</span><span class="logo__description"> Staff App</span></a>
+          <a href="#" data-activates="side-nav" class="button-collapse show-on-large left">
+            <i class="fas fa-bars"></i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="index.html">Dashboard</a>
+            </li>
+            <li>
+              <a href="to-cook.html">To Cook</a>
+            </li>
+            <li>
+              <a href="change-menu.html">Change Menu</a>
+            </li>
+            <li>
+              <a href="feedback.html">Feedback</a>
+            </li>
+            <li class="active">
+              <a href="add-staff.html">Add Staff</a>
+            </li>
+          </ul>
+  
+          <!-- Side navbar (when the top navbar is collapsed) -->
+          <ul id="side-nav" class="side-nav">
+            <li>
+              <div class="user-view">
+                <div class="background">
+                  <img src="img/navbar-background.jpg" alt="">
+                </div>
+                <a href="https://richjava.github.io/">
+                  <img src="img/richard-lovell-edited.png" alt="" class="circle">
+                </a>
+                <a href="https://richjava.github.io/">
+                  <span class="name white-text">Richard Lovell</span>
+                </a>
+                <a href="mailto:richjavalabs@gmail.com?Subject=I%20liked%20your%20food" target="_top">
+                  <span class="email white-text">richjavalabs@gmail.com</span>
+                </a>
+              </div>
+            </li>
+            <li>
+              <a href="index.html"><i class="fas fa-users-cog"></i>Dashboard</a>
+            </li>
+            <li>
+              <a href="to-cook.html"><i class="fas fa-clipboard-list"></i>To Cook</a>
+            </li>
+            <li>
+              <a href="change-menu.html"><i class="fas fa-pencil-alt"></i></i>Change Menu</a>
+            </li>
+            <li>
+              <a href="feedback.html"><i class="fas fa-comments"></i>Feedback</a>
+            </li>
+            <li>
+              <a href="add-staff.html"><i class="fas fa-user-plus"></i>Add Staff</a>
+            </li>
+            <li>
+              <div class="divider"></div>
+            </li>
+            <li>
+              <a href="login.html" class="waves-effect"><i class="fas fa-sign-out-alt"></i>Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  <!-- Section: Staff employed at Moana -->
+  <section class="section section-users grey lighten-4">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <div class="card">
+              <div class="card-content">
+                <span class="card-title">Staff Details</span>
+                <table class="striped">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>Name</th>
+                      <th>Email</th>
+                      <th>Job Title</th>
+                      <!-- A way to add a new staff member -->
+                      <th><a href="#staff-modal" class="modal-trigger btn blue lighten-2">Add Staff</a></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td width="70">
+                        <img src="img/richard-lovell-edited.png" alt="" class="responsive-img circle profile-pic">
+                      </td>
+                      <td>Richard Lovell</td>
+                      <td>richard@gmail.com</td>
+                      <td>Proprietor</td>
+                      <td>
+                        <a href="edit-details-richard.html" class="btn blue lighten-2">Edit Details</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td width="70">
+                        <img src="img/anton.png" alt="" class="responsive-img circle profile-pic">
+                      </td>
+                      <td>Anton</td>
+                      <td>anton@gmail.com</td>
+                      <td>Cashier</td>
+                      <td>
+                        <a href="edit-details-anton.html" class="btn blue lighten-2">Edit Details</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td width="70">
+                        <img src="img/fin-hampton.png" alt="" class="responsive-img circle profile-pic">
+                      </td>
+                      <td>Fin Hampton</td>
+                      <td>fin@gmail.com</td>
+                      <td>Cook</td>
+                      <td>
+                        <a href="edit-details-fin.html" class="btn blue lighten-2">Edit Details</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td width="70">
+                        <img src="img/keziah.png" alt="" class="responsive-img circle profile-pic">
+                      </td>
+                      <td>Keziah</td>
+                      <td>keziah@gmail.com</td>
+                      <td>Manager</td>
+                      <td>
+                        <a href="edit-details-keziah.html" class="btn blue lighten-2">Edit Details</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="card-action">
+                <ul class="pagination">
+                  <li class="disabled">
+                    <a href="#!" class="blue-text">
+                      <i class="material-icons">chevron_left</i>
+                    </a>
+                  </li>
+                  <li class="active blue lighten-2">
+                    <a href="#!" class="white-text">1</a>
+                  </li>
+                  <li class="waves-effect">
+                    <a href="#!" class="blue-text">2</a>
+                  </li>
+                  <li class="waves-effect">
+                    <a href="#!" class="blue-text">3</a>
+                  </li>
+                  <li class="waves-effect">
+                    <a href="#!" class="blue-text">4</a>
+                  </li>
+                  <li class="waves-effect">
+                    <a href="#!" class="blue-text">5</a>
+                  </li>
+                  <li class="waves-effect">
+                    <a href="#!" class="blue-text">
+                      <i class="material-icons">chevron_right</i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Add new staff modal -->
+  <div id="staff-modal" class="modal">
+      <div class="modal-content">
+        <h4>New Staff Details</h4>
+        <form>
+          <div class="input-field">
+            <input type="text" id="name">
+            <label for="name">Name</label>
+          </div>
+          <div class="file-field input-field">
+            <div class="btn blue white-text">
+              <span>Upload Image</span>
+              <input type="file" />
+            </div>
+            <div class="file-path-wrapper">
+              <input type="text" class="file-path" />
+            </div>
+          </div>
+          <div class="input-field">
+            <input type="email" id="email">
+            <label for="email">Email</label>
+          </div>
+          <div class="input-field">
+              <input type="text" id="jobtitle">
+              <label for="jobtitle">Job Title</label>
+          </div>
+          <div class="input-field">
+            <input type="password" id="password">
+            <label for="password">Password</label>
+          </div>
+          <div class="input-field">
+            <input type="password" id="password2">
+            <label for="password2">Confirm Password</label>
+          </div>
+        </form>
+        <div class="modal-footer">
+          <a href="#!" class="modal-action modal-close btn blue white-text">Submit</a>
+        </div>
+      </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="section blue darken-2 white-text center">
+    <p>Moana Admin Panel Copyright &copy; 2019</p>
+  </footer>
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+  <script src="js/add-staff.js"></script>
+
+</body>
+
+</html>

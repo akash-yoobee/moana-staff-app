@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" crossorigin="anonymous" />
+  <link type="text/css" rel="stylesheet" href="./vendors/materialize.min.css" media="screen,projection" />
+  <link rel="stylesheet" href="dist/app.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moana Staff App</title>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="blue darken-2">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo center"><span class="logo__name">Moana</span><span class="logo__description"> Staff App</span></a>
+          <a href="#" data-activates="side-nav" class="button-collapse show-on-large left">
+            <i class="fas fa-bars"></i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="index.html">Dashboard</a>
+            </li>
+            <li class="active">
+              <a href="to-cook.html">To Cook</a>
+            </li>
+            <li>
+              <a href="change-menu.html">Change Menu</a>
+            </li>
+            <li>
+              <a href="feedback.html">Feedback</a>
+            </li>
+            <li>
+              <a href="add-staff.html">Add Staff</a>
+            </li>
+          </ul>
+  
+          <!-- Side navbar (when the top navbar is collapsed) -->
+          <ul id="side-nav" class="side-nav">
+            <li>
+              <div class="user-view">
+                <div class="background">
+                  <img src="img/navbar-background.jpg" alt="">
+                </div>
+                <a href="https://richjava.github.io/">
+                  <img src="img/richard-lovell-edited.png" alt="" class="circle">
+                </a>
+                <a href="https://richjava.github.io/">
+                  <span class="name white-text">Richard Lovell</span>
+                </a>
+                <a href="mailto:richjavalabs@gmail.com?Subject=I%20liked%20your%20food" target="_top">
+                  <span class="email white-text">richjavalabs@gmail.com</span>
+                </a>
+              </div>
+            </li>
+            <li>
+              <a href="index.html"><i class="fas fa-users-cog"></i>Dashboard</a>
+            </li>
+            <li>
+              <a href="to-cook.html"><i class="fas fa-clipboard-list"></i>To Cook</a>
+            </li>
+            <li>
+              <a href="change-menu.html"><i class="fas fa-pencil-alt"></i></i>Change Menu</a>
+            </li>
+            <li>
+              <a href="feedback.html"><i class="fas fa-comments"></i>Feedback</a>
+            </li>
+            <li>
+              <a href="add-staff.html"><i class="fas fa-user-plus"></i>Add Staff</a>
+            </li>
+            <li>
+              <div class="divider"></div>
+            </li>
+            <li>
+              <a href="login.html" class="waves-effect"><i class="fas fa-sign-out-alt"></i>Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  <!-- Section: To cook list & Items served -->
+  <section class="section section-stats center">
+    <div class="row">
+      <div class="col s12 m8 l8 xl9">
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title">To Cook List</span>
+            <form id="tocook-form">
+              <div class="input-field">
+                <input id="tocook" type="text" placeholder="Add items customers have paid for here...">
+              </div>
+            </form>
+            <ul class="collection tocooklist">
+              <li class="collection-item">
+                <div>Beef Burger
+                  <a href="#!" class="secondary-content delete">
+                  <i class="material-icons">close</i>
+                  </a>
+                </div>
+              </li>
+              <li class="collection-item">
+                <div>Lamb Burger
+                  <a href="#!" class="secondary-content delete">
+                  <i class="material-icons">close</i>
+                  </a>
+                </div>
+              </li>
+              <li class="collection-item">
+                <div>Roasted Chicken
+                  <a href="#!" class="secondary-content delete">
+                  <i class="material-icons">close</i>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4 l4 xl3">
+        <div class="card-panel center">
+          <i class="fas fa-utensils medium"></i>
+          <h5>Items Served</h5>
+          <h3 class="count" id="served">32</h3>
+          <div class="progress grey lighten-1">
+            <div class="determinate blue lighten-1" style="width: 30%;"></div>
+          </div>
+        </div>
+      </div>
+      </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="section blue darken-2 white-text center">
+    <p>Moana Admin Panel Copyright &copy; 2019</p>
+  </footer>
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+  <script src="js/to-cook.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+// The client wanted the app to have subtle hints of the shop's brand.
+// The logo does this so it is reused many times in the app.
+
+.logo {
+  padding-left: 2rem;
+
+  &__name {
+    font-family: 'tribalcaseregular';
+    font-size: 1.8rem;
+  }
+
+  &__description {
+    font-family: 'quesha';
+    font-size: 2rem;
+  }
+}
