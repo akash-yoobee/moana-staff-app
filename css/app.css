@@ -36,8 +36,16 @@
   margin-bottom: -10px;
 }
 
-.card .card-content .card-title i {
-  line-height: 48px;
+.dropdown-content li > a, .dropdown-content li > span {
+  color: #1976d2;
+}
+
+.switch label input[type=checkbox]:checked + .lever:after {
+  background-color: #1976d2;
+}
+
+.switch label input[type=checkbox]:checked + .lever {
+  background-color: #90caf9;
 }
 
 @font-face {
@@ -85,14 +93,14 @@
 }
 
 .new-item {
-  width: 45px;
-  height: 45px;
+  width: 43px;
+  height: 43px;
   background: #1976d2;
   color: #ffffff;
   border-radius: 50px;
   text-align: center;
   font-size: 1.3rem;
-  line-height: 48px;
+  line-height: 45px;
   cursor: pointer;
 }
 

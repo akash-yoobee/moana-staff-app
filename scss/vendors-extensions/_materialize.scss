@@ -36,6 +36,14 @@
   margin-bottom: -10px;
 }
 
-.card .card-content .card-title i {
-  line-height: 48px;
+.dropdown-content li>a, .dropdown-content li>span {
+  color: #1976d2 ;
+}
+
+.switch label input[type=checkbox]:checked+.lever:after {
+  background-color: #1976d2;
+}
+
+.switch label input[type=checkbox]:checked+.lever {
+  background-color: #90caf9;
 }
