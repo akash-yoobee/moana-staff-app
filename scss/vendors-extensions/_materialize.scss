@@ -1,9 +1,16 @@
 // All CSS style rulesets in this file override Materialize's default styling.
 
+nav .brand-logo.center {
+  left: 25%;
+}
+
+nav ul a {
+  padding: 0 9px;
+}
+
 .carousel {
   height: 200px;
   top: 0px;
-  // bottom: 0px;
 }
 
 .collapsible-body {
