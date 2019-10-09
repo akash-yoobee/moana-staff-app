@@ -1,0 +1,16 @@
+// These percentages change how full the indicator bars under the four stats panels appear on index.html
+
+.stats-panel {
+  &__weekly-customers {
+    width: 40%;
+  }
+  &__items-sold {
+    width: 20%;
+  }
+  &__customer-feedback {
+    width: 35%;
+  }
+  &__app-users {
+    width: 22%;
+  }
+}

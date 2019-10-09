@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" crossorigin="anonymous" />
@@ -83,8 +82,8 @@
   </nav>
 
   <div class="row">
+    <!-- All current menu items from the mobile app -->
     <div class="col s12 m5 l4 xl3">
-      <!-- All current menu items from the mobile app -->
       <ul class="collapsible">
         <!-- Items currently on special -->
         <li>
@@ -295,8 +294,8 @@
         </li>
       </ul>
     </div>
+    <!-- Edit food details -->
     <div class="col s12 m7 l8 xl9">
-      <!-- Edit food details -->
       <section class="section section-details grey lighten-4">
           <div class="container">
             <div class="row">
@@ -305,14 +304,12 @@
                   <div class="card-content">
                       <div class="row">
                           <div class="col m12">
-                            <h5>Seclect an item from menu to edit</h5><br>
-                            <h5>or add a new item <a href="change-menu-new.html"><i class="fa fa-plus new-item blue lighten-2 waves-effect"></i></a></h5>
+                            <h5>Add new item below</h5>
                           </div>
                       </div>
                       <hr>
                     <div class="row">
                       <div class="col s12 m6">
-                        <span class="card-title">Beef Burger</span> <br>
                         <!-- Marking items out of stock was a client rerquirement -->
                         <div class="switch">
                           <label>
@@ -323,24 +320,18 @@
                           </label>
                         </div>
                       </div>
-                      <div class="col s12 m6 center">
-                        <img src="img/avatar-richard-lovell.png" alt="Picture of Richard Lovell" class="responsive-img circle profile-pic">
-                        <p>Last changed by</p>
-                        <p>Richard Lovell on 2019 Oct 12</p>
-                      </div>
                     </div>
-      
                     <form>
                       <div class="input-field">
-                        <input type="text" id="title" value="Beef Burger">
+                        <input type="text" id="title" value="">
                         <label for="title">Name</label>
                       </div>
                       <div class="input-field">
-                          <input type="text" id="title" value="$6.00">
+                          <input type="text" id="title" value="">
                           <label for="title">Price</label>
                       </div>
                       <div class="input-field">
-                          <input type="text" id="title" value="50">
+                          <input type="text" id="title" value="Enter a number here only if you want to discount this item">
                           <label for="title">% off Today</label>
                       </div>
                       <div class="file-field input-field">
@@ -354,14 +345,14 @@
                       </div>
                       <div class="input-field">
                         <select>
-                          <option value="" disabled>Select option</option>
-                          <option value="1" selected>Current Specials</option>
+                          <option value="0" selected>Select a category</option>
+                          <option value="1">Current Specials</option>
                           <option value="2">Burgers</option>
                           <option value="3">Fish</option>
                           <option value="4">Chicken</option>
-                          <option value="4">Sides & Sauces</option>
-                          <option value="4">Desserts</option>
-                          <option value="4">Drinks</option>
+                          <option value="5">Sides & Sauces</option>
+                          <option value="6">Desserts</option>
+                          <option value="7">Drinks</option>
                         </select>
                         <label>Category/Food Type</label>
                       </div>
@@ -372,51 +363,51 @@
                           <table class="striped">
                             <thead>
                               <tr>
-                                  <th></th>
-                                  <th>Per serve</th>
-                                  <th>Per 100 grams</th>
+                                <th></th>
+                                <th>Per serve</th>
+                                <th>Per 100 grams</th>
                               </tr>
                             </thead>
                             <tbody>
                               <tr>
                                 <td>Energy (kJ)</td>
-                                <td>3500</td>
-                                <td>1040</td>
+                                <td></td>
+                                <td></td>
                               </tr>
                               <tr>
                                 <td>Energy (Cal)</td>
-                                <td>837</td>
-                                <td>249</td>
+                                <td></td>
+                                <td></td>
                               </tr>
                               <tr>
                                 <td>Protein (g)</td>
-                                <td>53.5</td>
-                                <td>15.9</td>
+                                <td></td>
+                                <td></td>
                               </tr>
                               <tr>
                                 <td>Total Fat (g)</td>
-                                <td>52.2</td>
-                                <td>15.5</td>
+                                <td></td>
+                                <td></td>
                               </tr>
                               <tr>
                                 <td>Saturated Fat (g)</td>
-                                <td>23.6</td>
-                                <td>7.0</td>
+                                <td></td>
+                                <td></td>
                               </tr>
                               <tr>
                                 <td>Carbohydrate (g)</td>
-                                <td>37.6</td>
-                                <td>11.2</td>
+                                <td></td>
+                                <td></td>
                               </tr>
                               <tr>
                                 <td>Sugars (g)</td>
-                                <td>8.5</td>
-                                <td>2.5</td>
+                                <td></td>
+                                <td></td>
                               </tr>
                               <tr>
                                 <td>Sodium (mg)</td>
-                                <td>1150</td>
-                                <td>342</td>
+                                <td></td>
+                                <td></td>
                               </tr>
                             </tbody>
                           </table>
@@ -432,51 +423,51 @@
                             <tbody>
                               <tr>
                                 <td>Gluten</td>
-                                <td>Y</td>
+                                <td></td>
                               </tr>
                               <tr>
                                 <td>Egg</td>
-                                <td>Y</td>
+                                <td></td>
                               </tr>
                               <tr>
                                 <td>Milk</td>
-                                <td>Y</td>
+                                <td></td>
                               </tr>
                               <tr>
                                 <td>Soy</td>
-                                <td>Y</td>
+                                <td></td>
                               </tr>
                               <tr>
                                 <td>Fish & Crustaceans</td>
-                                <td>N</td>
+                                <td></td>
                               </tr>
                               <tr>
                                 <td>Peanuts</td>
-                                <td>N</td>
+                                <td></td>
                               </tr>
                               <tr>
                                 <td>Nuts</td>
-                                <td>N</td>
+                                <td></td>
                               </tr>
                               <tr>
                                 <td>Sesame Seeds</td>
-                                <td>Y</td>
+                                <td></td>
                               </tr>
                               <tr>
                                 <td>Sulphites</td>
-                                <td>N</td>
+                                <td></td>
                               </tr>
                               <tr>
                                 <td>Preservatives</td>
-                                <td>Y</td>
+                                <td></td>
                               </tr>
                               <tr>
                                 <td>Flavours</td>
-                                <td>Y</td>
+                                <td></td>
                               </tr>
                               <tr>
                                 <td>Colors</td>
-                                <td>Y</td>
+                                <td></td>
                               </tr>
                             </tbody>
                           </table>

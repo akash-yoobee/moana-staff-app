@@ -112,6 +112,27 @@ nav ul a {
   cursor: pointer;
 }
 
+.chart {
+  height: 300px;
+  width: 100%;
+}
+
+.stats-panel__weekly-customers {
+  width: 40%;
+}
+
+.stats-panel__items-sold {
+  width: 20%;
+}
+
+.stats-panel__customer-feedback {
+  width: 35%;
+}
+
+.stats-panel__app-users {
+  width: 22%;
+}
+
 /* This is so the preloader appears in the middle of the screen */
 .loader {
   position: absolute;
