@@ -28,11 +28,13 @@ setTimeout(function () {
     });
 
     // Comments - Approve & Deny
-    $('.approve').click(function (e) {
-      Materialize.toast('Comment Approved', 3000);
-      e.preventDefault();
-    });
-    $('.deny').click(function (e) {
+      $('.approve').click(function (e) {
+        $(this).parent().remove();
+        Materialize.toast('Comment Approved', 3000);
+        e.preventDefault();
+      });
+      $('.deny').click(function (e) {
+      $(this).parent().remove();
       Materialize.toast('Comment Denied', 3000);
       e.preventDefault();
     });

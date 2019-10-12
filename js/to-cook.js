@@ -33,6 +33,7 @@ $(document).ready(function () {
 
   // Deleting items that have been served to the customers
   $('.tocooklist').on('click', '.delete', function (e) {
+    document.getElementById("served").innerHTML ++;
     $(this).parent().parent().remove();
     Materialize.toast('Item Served', 3500);
     e.preventDefault();
