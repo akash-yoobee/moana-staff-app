@@ -103,7 +103,7 @@ $(document).ready(function () {
         <img src="img/avatar-chris-lewis.png" alt="Picture of Chris Lewis" class="responsive-img circle profile-pic">
         <div class="title">Chris Lewis</div>
       </td>
-      <td>Making food "good and greasy" is a work of art. <br> I am an artist, and I can confirm there are no artists at Moana Fish & Chips.</td>
+      <td>Making food <em>"good and greasy"</em> is a work of art. <br> I am an artist, and I can confirm there are no artists at Moana Fish & Chips.</td>
       <td>
         <a href="#!" class="green-text">
           <span>&emsp;&ensp;&emsp;&ensp;&emsp;&ensp;</span>
