@@ -27,39 +27,46 @@ setTimeout(function () {
         });
     });
 
-    // Approve and deny Fin and Anto. The New badge decrements
-
-
-      $('.approve').click(function (e) {
-        
-      var uniqueNamedAkashNewIndicatorFirst = 2;
-      const noNewMessagesAgain = 
-      `<span></span>`;
-        $(this).parent().remove();
-        Materialize.toast('Comment Approved', 3000);
-        e.preventDefault();
-      });
-      $('.deny').click(function (e) {
+    var newMessagesOnIndexPage = 2;
+    // Approve Fin and Anton. The New badge decrements and then disappears
+    $('.approveFinAnton').click(function (e) {
+    const noNewMessagesAgain = 
+    `<h5>Latest Feedback</h5>`;
       $(this).parent().remove();
-      Materialize.toast('Comment Denied', 3000);
-      document.getElementById("newMessageCount").innerHTML = (uniqueNamedAkashNewIndicatorFirst = uniqueNamedAkashNewIndicatorFirst - 1);
-    if (uniqueNamedAkashNewIndicatorFirst == 0) {
-      document.getElementById("newMessageCountHeadline").innerHTML =  noNewMessagesAgain;
+      document.getElementById("numberOfFeedback").innerHTML ++;
+      Materialize.toast('Comment Approved', 3000);
+      document.getElementById("newMessageCountOnIndexPage").innerHTML = (newMessagesOnIndexPage = newMessagesOnIndexPage - 1);
+      if (newMessagesOnIndexPage == 0) {
+        document.getElementById("newMessageBadgeHeadline").innerHTML =  noNewMessagesAgain;
+      };
+      e.preventDefault();
+    });
+
+    // Decrements Fin and Anton. The New badge decrements and then disappears
+    $('.denyFinAnton').click(function (e) {
+    const noNewMessagesAgain = 
+    `<h5>Latest Feedback</h5>`;
+    $(this).parent().remove();
+    Materialize.toast('Comment Denied', 3000);
+    document.getElementById("newMessageCountOnIndexPage").innerHTML = (newMessagesOnIndexPage = newMessagesOnIndexPage - 1);
+    if (newMessagesOnIndexPage == 0) {
+      document.getElementById("newMessageBadgeHeadline").innerHTML =  noNewMessagesAgain;
     };
       e.preventDefault();
     });
 
-      // Approve and deny Keziah and Joel
-      $('.approve').click(function (e) {
-        $(this).parent().remove();
-        Materialize.toast('Comment Approved', 3000);
-        e.preventDefault();
-      });
-      $('.deny').click(function (e) {
+    // Approve and deny Keziah and Joel
+    $('.approveKeziahJoel').click(function (e) {
       $(this).parent().remove();
-      Materialize.toast('Comment Denied', 3000);
+      document.getElementById("numberOfFeedback").innerHTML ++;
+      Materialize.toast('Comment Approved', 3000);
       e.preventDefault();
     });
+    $('.denyKeziahJoel').click(function (e) {
+    $(this).parent().remove();
+    Materialize.toast('Comment Denied', 3000);
+    e.preventDefault();
+  });
 
   });
 }, 1000);
