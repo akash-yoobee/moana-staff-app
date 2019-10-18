@@ -151,6 +151,10 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
   width: 22%;
 }
 
+.boldfeedback {
+  font-weight: bold;
+}
+
 /* This is so the preloader appears in the middle of the screen */
 .loader {
   position: absolute;

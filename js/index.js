@@ -27,7 +27,29 @@ setTimeout(function () {
         });
     });
 
-    // Comments - Approve & Deny
+    // Approve and deny Fin and Anto. The New badge decrements
+
+
+      $('.approve').click(function (e) {
+        
+      var uniqueNamedAkashNewIndicatorFirst = 2;
+      const noNewMessagesAgain = 
+      `<span></span>`;
+        $(this).parent().remove();
+        Materialize.toast('Comment Approved', 3000);
+        e.preventDefault();
+      });
+      $('.deny').click(function (e) {
+      $(this).parent().remove();
+      Materialize.toast('Comment Denied', 3000);
+      document.getElementById("newMessageCount").innerHTML = (uniqueNamedAkashNewIndicatorFirst = uniqueNamedAkashNewIndicatorFirst - 1);
+    if (uniqueNamedAkashNewIndicatorFirst == 0) {
+      document.getElementById("newMessageCountHeadline").innerHTML =  noNewMessagesAgain;
+    };
+      e.preventDefault();
+    });
+
+      // Approve and deny Keziah and Joel
       $('.approve').click(function (e) {
         $(this).parent().remove();
         Materialize.toast('Comment Approved', 3000);
@@ -38,5 +60,6 @@ setTimeout(function () {
       Materialize.toast('Comment Denied', 3000);
       e.preventDefault();
     });
+
   });
 }, 1000);
