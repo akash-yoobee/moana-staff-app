@@ -2,3 +2,64 @@
 // "Sass is well organised. No mixins or variables used".
 // I am showing the use of mixins and variables on this page.
 
+// According to https://sass-guidelin.es/#variables
+// A new variable should be created only when all of the following criteria are met:
+// the value is repeated at least twice;
+// the value is likely to be updated at least once;
+// all occurrences of the value are tied to the variable (i.e. not by coincidence).
+
+// for the words "Attributions" & "References"
+$ff-company: 'quesha';
+$column-header: 2rem;
+$column-contents: 1rem;
+$column-numbering: 0.7rem;
+
+// For the numbers in circles
+$clr-light-blue: #bbdefb;
+$clr-dark-blue: #1976d2;
+
+.copyright {
+  &__attributions {
+
+    &__counters{
+      // Applies to the words "Attributions" & "References"
+      background: $clr-light-blue;
+      text-align: center;
+      margin: 0em 0em 0.8em 0em;
+      font-family: $ff-company;
+      font-size: $column-header;
+      counter-reset: counter-name;
+      border-radius: 3px;
+
+      &__new-attribution{
+        position: relative;
+        padding: 0em 0em 0em 1.7em;
+        font-size: $column-contents;
+      }
+
+      &__new-attribution::before {
+        counter-increment: counter-name;
+        content: counter(counter-name);
+        position: absolute;
+        left: 0em;
+        top: 0.2em;
+        background: $clr-light-blue;
+        width: 1.8em;
+        height: 1.8em;
+        font-size: $column-numbering;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $clr-dark-blue;
+        color: $clr-dark-blue;
+        box-sizing: border-box;
+      }
+
+    }
+  }
+
+  // &__description {
+
+  // }
+}

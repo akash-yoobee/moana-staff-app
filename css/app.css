@@ -159,4 +159,46 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
   top: 40%;
   left: 47%;
 }
+
+.copyright__attributions__counters {
+  background: #bbdefb;
+  text-align: center;
+  margin: 0em 0em 0.8em 0em;
+  font-family: "quesha";
+  font-size: 2rem;
+  counter-reset: counter-name;
+  border-radius: 3px;
+}
+
+.copyright__attributions__counters__new-attribution {
+  position: relative;
+  padding: 0em 0em 0em 1.7em;
+  font-size: 1rem;
+}
+
+.copyright__attributions__counters__new-attribution::before {
+  counter-increment: counter-name;
+  content: counter(counter-name);
+  position: absolute;
+  left: 0em;
+  top: 0.2em;
+  background: #bbdefb;
+  width: 1.8em;
+  height: 1.8em;
+  font-size: 0.7rem;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #1976d2;
+  color: #1976d2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 /*# sourceMappingURL=app.css.map */
