@@ -29,15 +29,12 @@
 @import './components/chart';
 @import './components/stats-panel';
 @import './components/bold-feedback';
+@import './components/preloader';
 
 // pages
+@import './pages/attributions';
 
 // themes
 
-/* This is so the preloader appears in the middle of the screen */
-.loader {
-  position: absolute;
-  top: 40%;
-  left: 47%;
-}
+
 
