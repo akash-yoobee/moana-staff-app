@@ -27,11 +27,14 @@ setTimeout(function () {
         });
     });
 
+    var totalMessagesOnIndexPage = 4;
     var newMessagesOnIndexPage = 2;
-    // Approve Fin and Anton. The New badge decrements and then disappears
+    // Approve Fin and Anton. The "New" badge decrements and then disappears
     $('.approveFinAnton').click(function (e) {
     const noNewMessagesAgain = 
     `<h5>Latest Feedback</h5>`;
+    const zeroFeedback = 
+    `<h5>No New Customer Feedback</h5>`;
       $(this).parent().remove();
       document.getElementById("numberOfFeedback").innerHTML ++;
       Materialize.toast('Comment Approved', 3000);
@@ -39,32 +42,71 @@ setTimeout(function () {
       if (newMessagesOnIndexPage == 0) {
         document.getElementById("newMessageBadgeHeadline").innerHTML =  noNewMessagesAgain;
       };
+
+      // Changes the feedback column heading from "Latest Feedback" to 
+      // "No New Customer Feedback" when all 4 feedback messages have been 
+      // preocessed
+      totalMessagesOnIndexPage = totalMessagesOnIndexPage -1;
+      if (totalMessagesOnIndexPage == 0) {
+        document.getElementById("newMessageBadgeHeadline").innerHTML =  zeroFeedback;
+      };
       e.preventDefault();
     });
 
-    // Decrements Fin and Anton. The New badge decrements and then disappears
+    // Decrements Fin and Anton. The "New" badge decrements and then disappears
     $('.denyFinAnton').click(function (e) {
     const noNewMessagesAgain = 
     `<h5>Latest Feedback</h5>`;
+    const zeroFeedback = 
+    `<h5>No New Customer Feedback</h5>`;
     $(this).parent().remove();
     Materialize.toast('Comment Denied', 3000);
     document.getElementById("newMessageCountOnIndexPage").innerHTML = (newMessagesOnIndexPage = newMessagesOnIndexPage - 1);
+
     if (newMessagesOnIndexPage == 0) {
       document.getElementById("newMessageBadgeHeadline").innerHTML =  noNewMessagesAgain;
     };
-      e.preventDefault();
+
+    // Changes the feedback column heading from "Latest Feedback" to 
+    // "No New Customer Feedback" when all 4 feedback messages have been 
+    // preocessed
+    totalMessagesOnIndexPage = totalMessagesOnIndexPage -1;
+    if (totalMessagesOnIndexPage == 0) {
+      document.getElementById("newMessageBadgeHeadline").innerHTML =  zeroFeedback;
+    };
+    e.preventDefault();
     });
 
     // Approve and deny Keziah and Joel
     $('.approveKeziahJoel').click(function (e) {
-      $(this).parent().remove();
-      document.getElementById("numberOfFeedback").innerHTML ++;
-      Materialize.toast('Comment Approved', 3000);
-      e.preventDefault();
+    const zeroFeedback = 
+    `<h5>No New Customer Feedback</h5>`;
+    $(this).parent().remove();
+    document.getElementById("numberOfFeedback").innerHTML ++;
+    Materialize.toast('Comment Approved', 3000);
+
+    // Changes the feedback column heading from "Latest Feedback" to 
+    // "No New Customer Feedback" when all 4 feedback messages have been 
+    // preocessed
+    totalMessagesOnIndexPage = totalMessagesOnIndexPage -1;
+    if (totalMessagesOnIndexPage == 0) {
+      document.getElementById("newMessageBadgeHeadline").innerHTML =  zeroFeedback;
+    };
+    e.preventDefault();
     });
     $('.denyKeziahJoel').click(function (e) {
+    const zeroFeedback = 
+    `<h5>No New Customer Feedback</h5>`;
     $(this).parent().remove();
     Materialize.toast('Comment Denied', 3000);
+
+    // Changes the feedback column heading from "Latest Feedback" to 
+    // "No New Customer Feedback" when all 4 feedback messages have been 
+    // preocessed
+    totalMessagesOnIndexPage = totalMessagesOnIndexPage -1;
+    if (totalMessagesOnIndexPage == 0) {
+      document.getElementById("newMessageBadgeHeadline").innerHTML =  zeroFeedback;
+    };
     e.preventDefault();
   });
 

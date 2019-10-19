@@ -9,6 +9,7 @@ nav .brand-logo.center {
 
 // Settings for the top navbar
 nav ul a {
+  // adjusts spacing between the different navbar options
   padding: 0em 0.3em 0em 0.3em;
 }
 
@@ -59,7 +60,7 @@ nav ul a {
   background-color: #90caf9;
 }
 
-// When a form field was clicked materialize made it inderlined in green.
+// When a form field was clicked materialize made it underlined in green.
 // This code makes it blue #1976d2 blue darken-2.
 input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
   border-bottom: 1px solid #1976d2;
