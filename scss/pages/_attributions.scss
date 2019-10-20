@@ -1,6 +1,7 @@
 // For the "Produce CSS using a CSS processor" requirement your comments were
 // "Sass is well organised. No mixins or variables used".
 // I am showing the use of mixins and variables on this page.
+// The values in the variables need to be changed for the mobile (client facing) app
 
 // Variables
 // For the words "Attributions" & "References"
@@ -10,15 +11,15 @@ $column-header: 2rem;
 $column-contents: 1rem;
 $column-numbering: 0.7rem;
 // For the numbers in circles
-$clr-light-blue: #bbdefb;
-$clr-dark-blue: #1976d2;
+$clr-light: #bbdefb;
+$clr-dark: #1976d2;
 
 // Mixins
 
 // Applies to the words "Attributions" & "References"
 // Also sets up the incrementing counter
 @mixin attributions-and-references {
-  background: $clr-light-blue;
+  background: $clr-light;
   text-align: center;
   margin: 0em 0em 0.8em 0em;
   font-family: $ff-company;
@@ -46,14 +47,15 @@ $clr-dark-blue: #1976d2;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: $clr-light-blue;
-  border: 1px solid $clr-dark-blue;
-  color: $clr-dark-blue;
+  background: $clr-light;
+  border: 1px solid $clr-dark;
+  color: $clr-dark;
   box-sizing: border-box;
   }
 // Formatting the lists
 @mixin list-formatting {
-  margin: 0em 0em 0em 2.2em;
+  margin: 0em 0em 0em 3em;
+  text-indent: -1em;
   }
 // The entries in the "References" column
 @mixin reference-list-formatting {
